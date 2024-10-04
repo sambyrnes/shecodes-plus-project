@@ -8,7 +8,7 @@ function displayTemperature(response) {
 
 function search(event) {
   event.preventDefault();
-  let searchInputElement = document.querySelector("#search-input");
+  let searchInputElement = document.querySelector("#city-search-input");
   let city = searchInputElement.value;
 
   let apiKey = "76c81b0fc1ef1c3538e03a284oa1t4b1";
@@ -44,7 +44,7 @@ function formatDate(date) {
   return `${formattedDay} ${hours}:${minutes}`;
 }
 
-let searchForm = document.querySelector("#search-form");
+let searchForm = document.querySelector("#city-search-form");
 searchForm.addEventListener("submit", search);
 
 let currentDateELement = document.querySelector("#current-date");
